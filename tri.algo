@@ -1,0 +1,16 @@
+ALGORITHM tri
+VAR
+    tab : ARRAY_OF INTEGER[n]
+    i, j, int : INTEGER
+BEGIN
+    FOR i FROM 0 TO tab.length - 1  STEP 1  DO
+       int <-- t[i]
+       j <-- i-1
+        WHILE ((j>=0) and (t[j]> int)) DO
+            t[j+1] <-- t[j]
+            j <--j-1
+        END_WHILE
+        
+     t[j+1] <-- int
+    END_FOR
+END
